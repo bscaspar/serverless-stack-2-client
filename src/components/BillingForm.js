@@ -41,7 +41,7 @@ class BillingForm extends Component {
 
     const { name } = this.state;
 
-    this.setState = { isProcessing: true };
+    this.setState({ isProcessing: true });
 
     const { token, error } = await this.props.stripe.createToken({ name });
 
